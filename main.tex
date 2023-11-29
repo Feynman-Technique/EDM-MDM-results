@@ -1,0 +1,104 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[english]{babel}
+%\usepackage[nottoc]{tocbibind}
+\usepackage{hyperref}
+\usepackage{pdflscape}
+\pagenumbering{gobble}
+
+\usepackage[
+    hyperref=true,
+    url=true,
+    isbn=false,
+    backref=false,
+    style=numeric,
+    block=none,
+    backend=bibtex,
+    doi=true,
+    eprint=true,
+    sorting=none
+]{biblatex}
+\bibliography{reference.bib}
+
+\title{EDM and MDM latest results}
+\author{Muon Physics Group}
+\date{November 2023}
+
+\begin{document}
+
+%\maketitle
+\begin{landscape}
+
+\section{Latest EDM results}
+
+\noindent The latest EDM results.
+\begin{enumerate}
+\item Guan-Ming, Siew-Yan : EDM for lepton, baryon
+\item Tiang-qi, Siew-Yan  : EDM for paramagnetic and diamagnetic
+\end{enumerate}
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{|c|c|c|l|l|}
+\hline \hline
+Particle & $\sigma^{exp}_{d}$ & $\sigma^{goal}_{d}$  & Collaboration  & Reference \\ 
+(units)  & $[e \cdot cm]$ & $[e \cdot cm]$ &  &  \\ 
+\hline
+$e$ & $< 4.1 \times 10^{-30}$ ${}^{\dagger}$ & - & JILA  & Science 381.665 (2023)~\cite{eEDM_JILA}  \\ \hline
+$\mu^+$ & $< 1.8 \times 10^{-19}$ ${}^{\ddagger}$ & - & BNL E281 & PRD 80 052008 (2009)~\cite{bnlEDM}  \\ \hline
+$\mu^+$ & - &$6 \times 10^{-23}$ & muEDM & EPJC 289 01008 (2023)\cite{Schmidt-Wellenburg:2023aga}  \\ \hline
+$\mu^+$ & - &$1.5\times 10^{-21}$ & J-PARC & PTEP030 (2019)~\cite{jparc_muEDMgm2}  \\ \hline
+$\tau$ & $< 3.9 \times 10^{-17}$ ${}^{\ddagger}$  & - & BELLE &  PLB 551 16–26 (2022)~\cite{tauEDM_BELLE} \\ \hline
+$\nu$ & - & $ \sim 10^{-17}$ & milliQan & PLB 777 246–249, (2018)~\cite{Sher:2017wya}  \\ \hline
+$p$ & $< 7.9\times10^{-25}$ & - & UW & PRL 102 101601 (2009)~\cite{pEDM_Hg}  \\ \hline
+$p$ & - & $\sim10^{-29}$ & JEDI, srEDM & arXiv:2205.00830 (2022)~\cite{JEDIalexander2022storage}, RSI 87.11 (2026)~\cite{protonJEDI_srEDM}  \\ \hline
+$n$ & $< 1.8 \times 10^{-26}$ ${}^{\dagger}$ & $1 \times 10^{-27}$ & PSI & PRL 124 081803 (2020)~\cite{art:nEDM} EPJC 81 512 (2021)~\cite{art:n2EDM}\\ \hline
+$\Lambda^+_c, \Xi^+_c$ & $< 3 \times 10^{-16}$ & $3\times 10^{-16}$ & SELDOM, LHCb & PRD 103 072003 (2021)~\cite{charmBaryons}\\ \hline
+${}^{199}Hg$ & $< 7.4 \times 10^{-30}$ ${}^{\ddagger}$ & - & UW & PRL 116 161601 (2016)~\cite{PhysRevLett.116.161601}  \\ \hline
+${}^{226}Ra$  & $< 1.4 \times 10^{-23}$ ${}^{\ddagger}$ & - & ANL & PRC 94 025501 (2016)\cite{Bishof:2016uqx} \\ \hline
+\hline
+\hline
+\end{tabular}
+\end{center}
+${}^{\dagger}$ 90\% C. L. ; ${}^{\ddagger}$ 95\% C. L.
+\end{table}
+\end{landscape}
+
+
+\newpage 
+\begin{landscape}
+\section{Latest MDM results}
+
+\noindent The latest MDM results.
+\begin{enumerate}
+\item Jun-kai, Siew-Yan : MDM lepton
+\item Yong-Hao, Siew-Yan  : MDM for baryon
+\end{enumerate}
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{|c|l|c|l|l|}
+\hline \hline
+Particle & Magnetic Moment $g/2$ & rel. precision  & Collaboration  & Reference \\ 
+(units)  & &  &  &  \\ 
+\hline
+$e$ & $1.00115965218059(13)$ & $0.13$~ppt  & - & PRL 130 071801 (2023)~\cite{PhysRevLett.130.071801}  \\ \hline
+$\mu^{+}$ & $2.00233184110(47)$ & $200$~ppb & Muon g-2 FNAL  & PRL 131 161802 (2023)~\cite{PhysRevLett.131.161802}   \\ \hline
+$\tau$ & $-0.057<a_{\tau}<0.024$ ${}^{\ddagger}$ & - & ATLAS & PRL 131 151802 (2023)~\cite{PhysRevLett.131.151802}  \\ \hline
+$p$ & $2.79284734462(82)\mu_n$ & $\rm 0.3~ppb$ & BASE  & Science 358.6366 (2017)~\cite{pMDM} \\ \hline
+$\bar{p}$ & $2.7928473441(42)\mu_n$ & $\rm 1.5~ppb$ & BASE & Nature 550.7676 (2017)~\cite{pbarMDM} \\ \hline
+$n$ & $1.04187579(26) \times 10^{-3} \mu_{B}$ & $\rm 0.25~ppm$ & - & PLB 71.2 (1977)~\cite{GREENE1977297}  \\ \hline
+$\nu$ (solar) & $<6.4 \times 10^{-12} \mu_{B}$ ${}^{\dagger}$ & - & XENONnT &  PRL 129 161805 (2022)~\cite{PhysRevLett.129.161805} \\ \hline
+$\Lambda^+_c$, $\Xi^+_c$ & $2\times10^{-2}\mu_n$ & 4\% &SELDOM, LHCb & PRD 103 072003 (2021)~\cite{charmBaryons}\\ \hline
+\hline
+\hline
+\end{tabular}
+\end{center}
+${}^{\dagger}$ 90\% C. L. ; ${}^{\ddagger}$ 95\% C. L.
+\end{table}
+\end{landscape}
+
+%\bibliography{reference}
+\printbibliography
+
+\end{document}
